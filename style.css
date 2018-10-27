@@ -1,6 +1,7 @@
 .block {
 	border: 1px solid pink;
-	padding: 30px;
+	padding: 10px;
+	margin: 2px;
 	text-align: center;
 	background-color: gray;
 	font-size: 20px;
