@@ -10,7 +10,7 @@
 		<div class="row">
 			<form action="index.php" method="get">
 				<input type="text" name="count" required="true">
-				<select name="operation">
+				<select name="color">
 					<option value="red">Red</option>
 					<option value="blue">Blue</option>
 					<option value="random">Random</option>
@@ -21,14 +21,28 @@
 		<div class="row">
 			<?php
 			if (isset($_GET['count']) && !empty($_GET['count'])) {
-				for ($i=1; $i <= $_GET['count']; $i++) { 
-					echo "<div class='block'>" . $i . "</div>";
-				}
-			}
 
-			?>
-		</div>
-	</div>		
-</div>
-</body>
-</html>
+				// switch ($_GET['operation']) {
+
+				// 	case "red":
+					for ($i=1; $i <= $_GET['count']; $i++) { 
+						echo "<div class='block ".$_GET['color']."'>" . $i . "</div>";
+					}
+
+					// break;
+
+					// case "blue":
+					// for ($i=1; $i <= $_GET['count']; $i++) { 
+					// 	echo "<div class='blockblue'>" . $i . "</div>";
+					// 	break;
+					// }
+					// case "random":
+					// echo $_GET['a'] * $_GET['b'];
+					// break;
+				// }
+			}
+				?>
+			</div>
+		</div>		
+	</body>
+	</html>

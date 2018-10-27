@@ -8,3 +8,11 @@
 	/*float: left;*/
 	display: inline;
 }
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
